@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jayasurya B M | AI &amp; Software Developer Portfolio</title>
+<meta name="description" content="Portfolio of Jayasurya B M, an AI and software developer working with Python, FastAPI, machine learning and full-stack projects.">
+<meta name="author" content="Jayasurya B M">
+<meta property="og:title" content="Jayasurya B M | AI &amp; Software Developer Portfolio">
+<meta property="og:description" content="Projects in agentic AI, campus safety and healthcare machine learning.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jayasurya B M","email":"suryabm200@gmail.com","jobTitle":"AI & Software Developer","sameAs":["https://github.com/Jayasurya07-hub","https://www.linkedin.com/in/jayasurya-b-m-77b272281/"]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--card:#ffffff;--ink:#111111;--mute:#666b70;--line:#e9e9e6;--sage:#5f8570;--clay:#b06d50;--plum:#7d6688;--sky:#5a87a8;--amber:#c4953f;--rose:#bd6f80;--sand:#f4f4f0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="dark"]{--bg:#1d201e;--card:#252926;--ink:#e8e5dc;--mute:#9da095;--line:#343935;--sage:#8fb09b;--clay:#d19a7e;--plum:#b39cbd;--sand:#2d322e;--sky:#93b7d1;--amber:#e3bd72;--rose:#dca0ab}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+html{color-scheme:light}html[data-theme=dark]{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 Inter,system-ui,sans-serif;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:940px;margin:0 auto;padding:0 24px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--sage),var(--sky),var(--plum),var(--rose),var(--amber),var(--clay));z-index:20}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.logo{font-family:"Source Serif 4",serif;font-weight:600;font-size:19px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px;color:var(--mute);align-items:center}
+nav ul a{padding:4px 0;border-bottom:2px solid transparent;transition:.2s}
+nav ul a:hover{color:var(--ink)}nav ul a.on{color:var(--ink);border-color:var(--clay)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:4px 12px;font:500 12px "JetBrains Mono",monospace;cursor:pointer}
+.mono{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--sage)}
+h1,h2,h3{font-family:"Source Serif 4",serif;font-weight:600;margin:0}
+.hero{padding:96px 0 72px;position:relative}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;z-index:-1;transition:transform .3s ease-out}.hero:before{right:0;top:30px;width:280px;height:280px;background:radial-gradient(circle,color-mix(in srgb,var(--clay) 26%,transparent),transparent 70%);transform:translate(calc(var(--mx,0)*30px),calc(var(--my,0)*30px))}.hero:after{right:170px;top:150px;width:240px;height:240px;background:radial-gradient(circle,color-mix(in srgb,var(--sky) 26%,transparent),transparent 70%);transform:translate(calc(var(--mx,0)*-40px),calc(var(--my,0)*-40px))}
+h1{font-size:clamp(36px,6vw,56px);line-height:1.15;margin:14px 0 18px}
+h1 em{font-style:normal;color:inherit}
+.lead{max-width:600px;color:var(--mute);font-size:18px}
+.btns{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:10px 20px;border-radius:6px;border:1px solid var(--ink);font:500 14px Inter,sans-serif;cursor:pointer;background:none;color:var(--ink);transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.fill{background:var(--sage);border-color:var(--sage);color:#fff}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:28px;margin:8px 0 28px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.about p{margin:0 0 14px;color:var(--mute)}
+.facts{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;align-self:start}
+.facts div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.facts div:last-child{border:0}.facts span:first-child{color:var(--mute)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filters button{font:500 13px Inter,sans-serif;padding:6px 16px;border-radius:20px;border:1px solid var(--line);background:var(--card);color:var(--mute);cursor:pointer;transition:.2s}
+.filters button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.proj{--a:var(--sage);background-color:var(--card);background-image:radial-gradient(260px circle at var(--px,50%) var(--py,-60%),color-mix(in srgb,var(--a) 11%,transparent),transparent 70%);border:1px solid var(--line);border-left:4px solid var(--a);border-radius:10px;padding:28px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,.05);transition:transform .25s,box-shadow .25s}
+.proj.rv.in:hover{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(-3px);box-shadow:0 10px 24px -14px color-mix(in srgb,var(--a) 70%,transparent)}
+.proj.c2{--a:var(--clay)}.proj.c3{--a:var(--plum)}
+.proj .mono{color:var(--a)}
+.proj h3{font-size:22px;margin:6px 0 10px}
+.proj p{color:var(--mute);margin:0 0 16px}
+.proj ul{margin:0 0 18px;padding-left:18px;color:var(--mute);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tags span{font:400 12px "JetBrains Mono",monospace;background:color-mix(in srgb,var(--a) 16%,transparent);padding:4px 10px;border-radius:4px}
+.row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.link{font-size:14px;font-weight:500;color:var(--a);border-bottom:1px solid var(--a)}
+.more{background:none;border:0;color:var(--mute);font:500 14px Inter,sans-serif;cursor:pointer;padding:0}
+.more:hover{color:var(--ink)}
+.dwrap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.proj.open .dwrap{grid-template-rows:1fr}
+.detail{overflow:hidden;display:grid;gap:12px}
+.detail>div:first-child{margin-top:20px}
+.detail div{display:grid;grid-template-columns:96px 1fr;gap:14px;font-size:14px;color:var(--mute)}
+.detail b{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--a);padding-top:3px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
+.skills div{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:10px;padding:18px;transition:transform .25s}
+.skills div:hover{transform:translateY(-4px)}
+.skills h3{font-size:17px;margin-bottom:6px}.skills p{margin:0;font-size:14px;color:var(--mute)}
+.contact{text-align:center}
+.contact p{color:var(--mute);max-width:480px;margin:0 auto 22px}
+.mail{display:inline-flex;gap:10px;align-items:center;background:var(--sand);border-radius:8px;padding:10px 16px;font:500 14px "JetBrains Mono",monospace;margin-bottom:6px}
+footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;font-size:13px;color:var(--mute)}
+#top-btn{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;opacity:0;pointer-events:none;transition:.3s}
+#top-btn.show{opacity:1;pointer-events:auto}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.proj.hide{display:none}
+.art{color:var(--a);background:color-mix(in srgb,var(--a) 11%,var(--card));border-radius:8px;margin-bottom:20px;overflow:hidden}
+.art svg{display:block;width:100%;height:auto;max-height:170px}
+.art .s{stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.art .f{fill:currentColor;opacity:.2}.art .d{stroke-dasharray:6 6;opacity:.6}.art .g{stroke:currentColor;opacity:.15;stroke-width:1}
+.proj:hover .art .pulse{stroke-dashoffset:0;animation:dash 2.2s linear}
+@keyframes dash{from{stroke-dasharray:700;stroke-dashoffset:700}to{stroke-dasharray:700;stroke-dashoffset:0}}
+
+.caret{animation:blink 1s steps(2) infinite;margin-left:2px}@keyframes blink{50%{opacity:0}}
+h2:after{content:"";display:block;width:44px;height:3px;border-radius:2px;margin-top:10px;background:var(--hc,var(--sage));transition:width .4s}
+section:hover h2:after{width:90px}
+#about{--hc:var(--sky)}#about>.mono{color:var(--sky)}
+#projects{--hc:var(--clay)}#projects>.mono{color:var(--clay)}
+#skills{--hc:var(--amber)}#skills>.mono{color:var(--amber)}
+#contact{--hc:var(--rose)}#contact>.mono{color:var(--rose)}#contact h2:after{margin:10px auto 0}
+.facts,.skills div{box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.facts div:nth-child(1) span:last-child{color:var(--sky)}.facts div:nth-child(2) span:last-child{color:var(--sage)}.facts div:nth-child(3) span:last-child{color:var(--clay)}.facts div:nth-child(4) span:last-child{color:var(--plum)}
+.filters button:hover{border-color:var(--fc);color:var(--fc)}
+.filters button.on{background:var(--fc);border-color:var(--fc);color:#fff}
+.skills div:hover{background:color-mix(in srgb,var(--c) 9%,var(--card));box-shadow:0 10px 22px -14px var(--c)}
+.skills div h3{transition:color .2s}.skills div:hover h3{color:var(--c)}
+.btn.sky{background:var(--sky);border-color:var(--sky);color:#fff}.btn.rose{background:var(--rose);border-color:var(--rose);color:#fff}
+.btn.fill{background:linear-gradient(90deg,var(--sage),var(--sky))}
+.btn:hover{box-shadow:0 8px 18px -10px var(--ink)}
+.mail{border:1px dashed var(--rose);background:color-mix(in srgb,var(--rose) 8%,var(--card))}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+@media(max-width:720px){.about{grid-template-columns:1fr}nav ul{gap:12px;font-size:13px}.hide-sm{display:none}.hero{padding:64px 0 48px}.detail div{grid-template-columns:1fr;gap:2px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap"><a class="logo" href="#top">Jayasurya B M</a>
+<ul><li class="hide-sm"><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li class="hide-sm"><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li><li><button id="theme" aria-label="Toggle theme">Dark</button></li></ul></div></nav>
+
+<header class="wrap hero" id="top">
+<div class="mono"><span id="role">Software &amp; AI Developer</span><span class="caret">|</span></div>
+<h1>Building <em>intelligent</em>, reliable systems with Python.</h1>
+<p class="lead">I work on AI-driven applications, from autonomous monitoring agents to healthcare prediction, with a focus on clean backends and practical, real-world problems.</p>
+<div class="btns"><a class="btn fill" href="#projects">View projects</a><a class="btn rose" href="mailto:suryabm200@gmail.com">Email me</a><a class="btn" href="https://github.com/Jayasurya07-hub" target="_blank" rel="noopener">GitHub</a></div>
+</header>
+
+<main class="wrap">
+<section id="about"><div class="mono">01 · About</div><h2>A little about me</h2>
+<div class="about rv"><div>
+<p>I am a developer interested in applied AI and backend engineering. My projects combine machine learning, multi-agent design and API development to solve problems that matter in industry, healthcare and on campus.</p>
+<p>I enjoy taking an idea from a simple prototype to something that can be run, tested and deployed, including the documentation and tooling that make a project easy to use.</p></div>
+<div class="facts"><div><span>Focus</span><span>AI &amp; Backend</span></div><div><span>Main language</span><span>Python</span></div><div><span>Projects</span><span data-count="3">0</span></div><div><span>Public repos</span><span data-count="2">0</span></div></div></div></section>
+
+<section id="projects"><div class="mono">02 · Projects</div><h2>Selected work</h2>
+<div class="filters" id="filters"><button class="on" data-f="all" style="--fc:var(--ink)">All</button><button data-f="ai" style="--fc:var(--sage)">AI</button><button data-f="ml" style="--fc:var(--plum)">Machine learning</button><button data-f="web" style="--fc:var(--sky)">Full stack</button></div>
+
+<article class="proj rv" data-cat="ai ml"><div class="art"><svg viewBox="0 0 600 150" role="img" aria-label="Sensor signal drifting and being corrected by agents"><path class="g s" d="M0 40H600M0 75H600M0 110H600"/><path class="s pulse" d="M20 75 q20-18 40 0 t40 0 t40 0 t40 4 t40 10 t40 18 t40 26"/><path class="s d" d="M260 75 q20-18 40 0 t40 0 t40 0"/><g class="s"><circle cx="440" cy="40" r="14" class="f"/><circle cx="500" cy="75" r="14" class="f"/><circle cx="440" cy="110" r="14" class="f"/><circle cx="560" cy="40" r="14"/><circle cx="560" cy="110" r="14"/><path d="M454 44l32 24M486 82l-32 24M514 70l34-24M514 80l34 24"/></g></svg></div><div class="mono">AI · Smart manufacturing</div>
+<h3>Agentic AI for Sensor Drift Mitigation</h3>
+<p>A simulation of an autonomous monitoring and self-healing system for smart manufacturing sensors. It detects drift, data quality issues and failures, then applies corrective actions through a multi-agent architecture.</p>
+<ul><li>Detects concept drift in sensor streams using ADWIN from the river library</li><li>Monitors data quality: missing values, spikes and frozen sensors</li><li>Root cause analysis and simulated self-healing: imputation, recalibration and reset</li><li>Real-time dashboard showing sensor streams, health scores and agent logs</li></ul>
+<div class="tags"><span>Python</span><span>FastAPI</span><span>river</span><span>JavaScript</span></div>
+<div class="row"><a class="link" href="https://github.com/Jayasurya07-hub/Agentic-AI-for-sensor-drift-mitigation-and-data-quality-enhancement" target="_blank" rel="noopener">View on GitHub →</a><button class="more">Show details +</button></div>
+<div class="dwrap"><div class="detail"><div><b>Problem</b><span>Sensors in manufacturing lines degrade, freeze or produce bad readings, which quietly lowers product quality.</span></div><div><b>Approach</b><span>Specialised agents watch each stream, diagnose the likely cause from symptom patterns, and trigger a matching fix.</span></div><div><b>Outcome</b><span>A working simulation covering normal operation, wear-and-tear drift, sudden spikes, frozen sensors and missing values.</span></div></div></div></article>
+
+<article class="proj c2 rv" data-cat="ai web"><div class="art"><svg viewBox="0 0 600 150" role="img" aria-label="Campus building protected by a shield with a dashboard"><path class="g s" d="M0 130H600"/><g class="s"><path d="M70 130V70l60-30 60 30v60"/><path class="f" d="M70 130V70l60-30 60 30v60z"/><path d="M105 130V100h50v30M130 40v-14"/><path d="M130 26h22v10h-22"/></g><g class="s"><path class="f" d="M300 22l56 18v38c0 28-22 44-56 56-34-12-56-28-56-56V40z"/><path d="M300 22l56 18v38c0 28-22 44-56 56-34-12-56-28-56-56V40z"/><path class="pulse" d="M274 76l20 20 34-38"/></g><g class="s"><rect x="430" y="30" width="130" height="100" rx="8"/><path class="f" d="M450 110V86h16v24zM478 110V66h16v44zM506 110V76h16v34zM534 110V50h16v60z"/></g></svg></div><div class="mono">AI · Campus safety</div>
+<h3>CampusShield AI</h3>
+<p>A full-stack platform made up of a FastAPI backend, an admin React dashboard, ML services and edge components, prepared for deployment on cloud platforms.</p>
+<ul><li>FastAPI backend with a health endpoint and database initialisation</li><li>React admin dashboard connected to the API</li><li>LLM and RAG module with startup guides and documentation</li><li>Test suites, production validation, Docker, Render and Railway configuration</li></ul>
+<div class="tags"><span>Python</span><span>FastAPI</span><span>React</span><span>LLM / RAG</span><span>Docker</span></div>
+<div class="row"><a class="link" href="https://github.com/Jayasurya07-hub/Campus-Shield---QQ" target="_blank" rel="noopener">View on GitHub →</a><button class="more">Show details +</button></div>
+<div class="dwrap"><div class="detail"><div><b>Problem</b><span>Campuses need a single place to track incidents and respond to safety concerns quickly.</span></div><div><b>Approach</b><span>A FastAPI service with a database, ML and LLM modules, and a React admin dashboard, packaged for cloud deployment.</span></div><div><b>Outcome</b><span>A deployable platform with test suites, production checks and documentation for running it locally or on Render and Railway.</span></div></div></div></article>
+
+<article class="proj c3 rv" data-cat="ml"><div class="art"><svg viewBox="0 0 600 150" role="img" aria-label="Hospital building with a heartbeat line and a readmission loop"><path class="g s" d="M130 120H470"/><g class="s"><rect class="f" x="245" y="26" width="110" height="94"/><rect x="245" y="26" width="110" height="94"/><rect class="f" x="175" y="62" width="70" height="58"/><rect x="175" y="62" width="70" height="58"/><rect class="f" x="355" y="62" width="70" height="58"/><rect x="355" y="62" width="70" height="58"/><path d="M292 40h16v14h14v16h-14v14h-16V70h-14V54h14zM288 120v-20h24v20M195 80h30M195 98h30M375 80h30M375 98h30"/></g><path class="s pulse" d="M0 138H90l12-20 14 34 12-26 8 12H600"/><g class="s"><path d="M520 70a30 30 0 1 1-10-22"/><path d="M512 36l2 14 14-2"/></g></svg></div><div class="mono">Machine learning · Healthcare</div>
+<h3>Hospital Readmission Prediction</h3>
+<p>A machine learning project that predicts whether a patient is likely to be readmitted to hospital after discharge, using patient and clinical data.</p>
+<ul><li>Data cleaning and preparation of patient records</li><li>Training and comparing classification models</li><li>Evaluation focused on correctly flagging high-risk patients</li></ul>
+<div class="tags"><span>Python</span><span>Machine Learning</span><span>Healthcare Analytics</span></div>
+<div class="row"><button class="more">Show details +</button></div>
+<div class="dwrap"><div class="detail"><div><b>Problem</b><span>Unplanned hospital readmissions are costly and often signal gaps in care after discharge.</span></div><div><b>Approach</b><span>Patient records are cleaned and prepared, then used to train machine learning models that predict readmission risk.</span></div><div><b>Outcome</b><span>Helps care teams identify high-risk patients early, so follow-up and support can be prioritised.</span></div></div></div></article>
+</section>
+
+<section id="skills"><div class="mono">03 · Skills</div><h2>What I work with</h2>
+<div class="skills rv">
+<div style="--c:var(--sage)"><h3>Languages</h3><p>Python, JavaScript, HTML, CSS</p></div>
+<div style="--c:var(--clay)"><h3>Backend</h3><p>FastAPI, REST APIs, databases</p></div>
+<div style="--c:var(--plum)"><h3>AI &amp; Data</h3><p>Machine learning, drift detection, LLM and RAG</p></div>
+<div style="--c:var(--sky)"><h3>Frontend</h3><p>React, dashboards</p></div>
+<div style="--c:var(--amber)"><h3>Deployment</h3><p>Docker, Render, Railway</p></div>
+</div></section>
+
+<section id="contact" class="contact rv"><div class="mono">04 · Contact</div><h2>Let us connect</h2>
+<p>I am open to internships, collaborations and conversations about AI and software projects.</p>
+<div class="mail"><span>suryabm200@gmail.com</span><button class="btn" id="copy" style="padding:4px 12px;font-size:12px">Copy</button></div>
+<div class="btns" style="justify-content:center"><a class="btn fill" href="mailto:suryabm200@gmail.com">Send email</a><a class="btn sky" href="https://www.linkedin.com/in/jayasurya-b-m-77b272281/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/Jayasurya07-hub" target="_blank" rel="noopener">GitHub</a></div></section>
+</main>
+<footer>© 2026 Jayasurya B M. All rights reserved.</footer>
+<button id="top-btn" aria-label="Back to top">↑</button>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const root=document.documentElement,tb=$('#theme');
+function isDark(){return root.dataset.theme==='dark'}
+function sync(){tb.textContent=isDark()?'Light':'Dark'}
+root.dataset.theme='light';
+sync();
+tb.onclick=()=>{const n=isDark()?'light':'dark';root.dataset.theme=n;sync()};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+const links=$$('nav ul a'),secs=$$('main section');
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(s=>so.observe(s));
+$$('.more').forEach(b=>b.onclick=()=>{const p=b.closest('.proj');p.classList.toggle('open');b.textContent=p.classList.contains('open')?'Hide details −':'Show details +'});
+$$('#filters button').forEach(b=>b.onclick=()=>{$$('#filters button').forEach(x=>x.classList.toggle('on',x===b));
+$$('.proj').forEach(p=>p.classList.toggle('hide',b.dataset.f!=='all'&&!p.dataset.cat.split(' ').includes(b.dataset.f)))});
+$('#copy').onclick=async e=>{const b=e.target;try{await navigator.clipboard.writeText('suryabm200@gmail.com');b.textContent='Copied'}catch(x){b.textContent='Press Ctrl+C'}setTimeout(()=>b.textContent='Copy',1800)};
+const bar=$('#bar'),up=$('#top-btn');
+addEventListener('scroll',()=>{const h=root.scrollHeight-innerHeight;bar.style.width=(h>0?scrollY/h*100:0)+'%';up.classList.toggle('show',scrollY>500)},{passive:true});
+up.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){const roles=['Software & AI Developer','Machine Learning Enthusiast','Backend Engineer'],el=$('#role');let r=0,c=0,del=true;c=roles[0].length;(function t(){const w=roles[r];c+=del?-1:1;el.textContent=w.slice(0,c);let d=del?35:70;if(!del&&c===w.length){del=true;d=1600}else if(del&&c===0){del=false;r=(r+1)%roles.length;d=300}setTimeout(t,d)})()}
+const hero=$('.hero');hero.addEventListener('mousemove',e=>{const b=hero.getBoundingClientRect();hero.style.setProperty('--mx',(e.clientX-b.left)/b.width-.5);hero.style.setProperty('--my',(e.clientY-b.top)/b.height-.5)});
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){$$('[data-count]',e.target).forEach(n=>{const T=+n.dataset.count;let i=0;const id=setInterval(()=>{i++;n.textContent=i;if(i>=T)clearInterval(id)},300)});co.unobserve(e.target)}}));co.observe($('.facts'));
+$$('.proj').forEach(p=>{p.addEventListener('mousemove',e=>{const b=p.getBoundingClientRect(),x=e.clientX-b.left,y=e.clientY-b.top;p.style.setProperty('--px',x+'px');p.style.setProperty('--py',y+'px');p.style.setProperty('--ry',((x/b.width-.5)*4)+'deg');p.style.setProperty('--rx',(-(y/b.height-.5)*4)+'deg')});p.addEventListener('mouseleave',()=>{p.style.setProperty('--rx','0deg');p.style.setProperty('--ry','0deg');p.style.setProperty('--py','-60%')})});
+</script>
+</body>
+</html>
